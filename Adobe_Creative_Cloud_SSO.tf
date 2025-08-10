@@ -89,8 +89,8 @@ resource "azuread_claims_mapping_policy" "Adobe_Creative_Cloud_policy" {
     ClaimsSchema = [
      {
        ID = "mail"
-       JwtClaimType = "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier"
-       SamlClaimType = "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier"
+       JwtClaimType = "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameid"
+       SamlClaimType = "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameid"
        Source = "user"
      },
      {
